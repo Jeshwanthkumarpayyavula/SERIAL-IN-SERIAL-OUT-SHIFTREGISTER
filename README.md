@@ -44,15 +44,25 @@ Developed by:Jeshwanth kumar
 RegisterNumber:212223240114
 */
 ```
-module EX_10(clk, sin, q); input clk; input sin; output [3:0] q; reg [3:0] q; always @(posedge clk) begin q[0] <= sin; q[1] <= q[0]; q[2] <= q[1]; q[3] <= q[2]; end endmodule
+module EX_10(clk, sin, q);
+ input clk; input sin;
+ output [3:0] q;
+reg [3:0] q;
+ always @(posedge clk) begin q[0] <= sin;
+q[1] <= q[0];
+ q[2] <= q[1];
+q[3] <= q[2];
+end endmodule
 ```
 
 **RTL LOGIC FOR SISO Shift Register**
-![Screenshot 2024-05-06 170522](https://github.com/Jeshwanthkumarpayyavula/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/145742402/46864ef9-4f53-4a30-a95d-66cf283136d9)
+![Screenshot 2024-05-06 170931](https://github.com/Jeshwanthkumarpayyavula/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/145742402/b3ef74df-2b00-42c0-a75a-37460f61cdaa)
+
 
 
 **TIMING DIGRAMS FOR SISO Shift Register**
-![Screenshot 2024-05-06 170532](https://github.com/Jeshwanthkumarpayyavula/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/145742402/6503d8b1-4061-43b0-8475-96c937a4da6c)
+![Screenshot 2024-05-06 170931](https://github.com/Jeshwanthkumarpayyavula/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/145742402/52e7c585-6b3c-4296-937e-3feef858eade)
+
 
 
 **RESULTS**
